@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('IMG/m4.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.innercontainer {
+    width: 100%;
+    display: flex;
+}
+
+.content {
+    padding: 20% 5% 20% 5%;
+    text-align: center;
+    width: 50%;
+    color: white;
+}
+
+.content p {
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 2px grey;
+    font-family: Segoe UI Black;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: Segoe Script;
+    color: red;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px grey;
+}
+
+
+/*---------------------------form class------------------*/
+
+
+/*designing of form box*/
+
+.form {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    /*so that each input box takes its full space of line     */
+    justify-content: center;
+    /*palce the form in center for right and left  */
+    align-items: center;
+    /*to place the form in center */
+}
+
+form {
+    width: 400px;
+    display: flex;
+    /*so that each input box takes its full space of line     */
+    flex-direction: column;
+    /*for setting element in a column style  */
+    border-radius: 20px;
+    height: 650px;
+    outline: 1px solid rgba(255, 255, 255, .3);
+    background: white;
+}
+
+
+/*designing of input box*/
+
+input {
+    width: 80%;
+    margin: auto;
+    /*places input boxes in center  */
+    margin-bottom: 7%;
+    /*tooks 7% margin from bottom */
+    border: none;
+    /*removes border */
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+}
+
+button {
+    width: 50%;
+    margin: auto;
+    border-bottom: none;
+    color: white;
+    font-size: 20px;
+    background: red;
+    padding: 10px 30px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: grey;
+    font-size: 18px;
+}
+
+
+/*designing of login button on hover    */
+
+button:hover {
+    color: white;
+    background: brown;
+}
+
+
+/*designing of forget password*/
+
+a {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    margin-bottom: 6%;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+/*designing of LOGIN h1*/
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}

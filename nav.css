@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial black;
+}
+
+.maincontainer {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    /*places the item in center from top bottom */
+    justify-content: space-between;
+    /**gives spaces betw logos and menus */
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+}
+
+.logo a {
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+
+/*nav ul li a.active,*/
+
+nav ul li a:hover {
+    color: #111;
+    background: #fff;
+}
+
+
+/**--------for upload popup--------------- */
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: lightgrey;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: #111;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 30px;
+    background: black;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button {
+    background-color: blue;
+    padding: 10px;
+    width: 100px;
+    border: #f2f2f2;
+    color: white;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.popup button:hover {
+    background-color: navy;
+}
+
+.popup input {
+    margin-top: 50px;
+    border: none;
+    font-size: 15px;
+}
+
+.popup select {
+    margin-top: 50px;
+    border: none;
+    font-size: 15px;
+    background-color: #f2f2f2;
+    padding: 7px;
+}
+
+
+/*for logout popup */
+
+.popup2 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: lightgrey;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: #111;
+}
+
+.popup2 .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 30px;
+    background: black;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup2.active .content {
+    transition: all 300ms ease-in;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup2 p {
+    font-size: 20px;
+    padding-top: 8px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.popup2 a {
+    text-decoration: none;
+    background-color: blue;
+    padding: 8px 25px 8px 25px;
+    width: 100px;
+    border: #f2f2f2;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.popup2 a:hover {
+    background-color: navy;
+}
+
+
+/*---------------------------for picture section----------- -----*/
+
+.container {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+table {
+    width: 100%;
+}
+
+table tr {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+table td {
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+}
+
+table tr td img {
+    width: 100%;
+    height: 550px;
+    border-radius: 10%;
+}
+
+.container {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+body {
+    font-family: arial black;
+}
+
+.maincontainer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.images {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    /*places the item in center from top bottom */
+    justify-content: space-between;
+    /**gives spaces betw logos and menus */
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+}
+
+.logo {
+    font-size: 32px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+
+/*nav ul li a.active,*/
+
+nav ul li a:hover {
+    color: #111;
+    background: #fff;
+}
+
+
+/**--------for upload popup--------------- */
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: lightgrey;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: #111;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 30px;
+    background: black;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button {
+    background-color: blue;
+    padding: 10px;
+    width: 100px;
+    border: #f2f2f2;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.popup button:hover {
+    background-color: navy;
+}
+
+.popup input {
+    margin-top: 50px;
+    border: none;
+    font-size: 15px;
+}
+
+.popup select {
+    margin-top: 50px;
+    border: none;
+    font-size: 15px;
+    background-color: #f2f2f2;
+    padding: 7px;
+}
+
+
+/*for logout popup */
+
+.popup2 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: lightgrey;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: #111;
+    font-size: 15px;
+}
+
+.popup2 .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 30px;
+    background: black;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup2.active .content {
+    transition: all 300ms ease-in;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup2 p {
+    font-size: 20px;
+    padding-top: 8px;
+    margin-bottom: 30px;
+    margin-top: 3 0px;
+}
+
+.popup2 a {
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+    border: #f2f2f2;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.popup2 a:hover {
+    background-color: navy;
+}
+
+
+/*=================================================*/
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table tr {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+table td {
+    border-radius: 10px;
+    margin: 0 20px 20px 20px;
+}
+
+table tr td button img {
+    width: 90%;
+    height: 550px;
+    border-radius: 10%;
+}
+
+table tr td a {
+    text-decoration: none;
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+}
+
+table tr td a:hover {
+    background-color: darkred;
+}
+
+
+/*------------------FOOTER-----------------------------------*/
+
+footer {
+    background-color: #121315;
+    /*bg color for the whole footer */
+    color: #a7a7a7;
+    /*for text color*/
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    /*IMP TOOKS AUTO PADDING MARGIN ETC */
+}
+
+.row {
+    width: 100%;
+    height: 180px;
+    display: flex;
+}
+
+.column {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /*places the each element in column style under down its heading */
+    padding: 40PX 12px 30px 40px;
+}
+
+.column1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 40PX 12px 30px 40px;
+    text-align: left;
+    /*places the each element in column style under down its heading */
+    padding: 0px 12px;
+}
+
+h3 {
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+.column p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+}
+
+
+/*----------------------------------------------------- */
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    /*so that li sets properly on top */
+    margin: 0;
+    /*so that li sets properly on top */
+}
+
+ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    color: #2a8ded;
+}
