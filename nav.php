@@ -72,7 +72,7 @@
 
     <table>
     <?php 
-      $query="select * from image order by name desc";
+      $query="select * from image order by id desc";
         $result=mysqli_query($connect,$query);
         while($row=mysqli_fetch_assoc($result))
         {		
