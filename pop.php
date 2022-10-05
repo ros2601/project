@@ -126,7 +126,7 @@ if(!empty($_GET['did']))
     <div class="content">
       <div class="close-btn" onclick="togglePopup2()">&times;</div>
         <p>Do you really want to Log out?</p>
-            <a href="head.php" >Yes</a>
+            <a href="logout.php" >Yes</a>
             <a href="pop.php">No</a>
       </div>
     </div>
