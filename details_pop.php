@@ -49,7 +49,13 @@
             {
               $id=$_GET['details'];
               $q1="update image set views=views+1 where id=$id";
-
+              if(mysqli_query($connect,$q1))
+              {
+                echo "ok";
+              }
+              else{
+                echo"not";
+              }
 
               $query="select * from image where id=$id";
               $result=mysqli_query($connect,$query);
@@ -90,7 +96,7 @@
            ?>
       </table>
 
-      <a href="pop.php">Go back to popular images page</a>
+      <a href="pop.php">Go back to Popluar Images page</a>
         </div>
       
     </div>
