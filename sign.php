@@ -13,11 +13,14 @@ if(!empty($_REQUEST['signin']))
         </script>";
     }
     else{
+
         $username=$_REQUEST['username'];
         $password=$_REQUEST['password'];
+        $_SESSION['username']=$username;
         $query="SELECT * FROM roshni1 where name='$username' and password='$password'";
         $result=mysqli_query($connect,$query);
         $count=mysqli_num_rows($result);
+
 
     if($count>0)
     {
